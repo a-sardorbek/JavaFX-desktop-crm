@@ -21,3 +21,9 @@ This application is made for private textile company using JavaFX. Everyone can 
 # Add Employee page
 
 ![add](https://user-images.githubusercontent.com/85536651/159626174-b2f0b60c-0b39-4d88-8d80-3e90b2b97b6a.png)
+
+
+# Add employee position page
+
+
+![lavozim](https://user-images.githubusercontent.com/85536651/159626407-a46c9c18-c969-4b21-85dd-387aef3c162a.png)
