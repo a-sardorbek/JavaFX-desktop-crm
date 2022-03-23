@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BirthdayController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="96.0" prefHeight="68.0" prefWidth="1100.0" style="-fx-background-color: white;">
+         <children>
+            <JFXDatePicker fx:id="dateChooseFIeld" defaultColor="#554ad7" promptText="Oy.Kun.Yil">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </JFXDatePicker>
+            <Button mnemonicParsing="false" onMouseClicked="#qidirishClicked" styleClass="buttonSetting" stylesheets="@../stylesheets/butttons.css" text="Qidirish">
+               <HBox.margin>
+                  <Insets left="80.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="315.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#todayClicked" styleClass="buttonSetting" stylesheets="@../stylesheets/butttons.css" text="Bugun">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="546.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#tomorrowClicked" styleClass="buttonSetting" stylesheets="@../stylesheets/butttons.css" text="Ertaga">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+         <children>
+            <Label fx:id="fioLable" prefWidth="250.0" textFill="#6652c9">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lavozimLable" prefWidth="200.0" textFill="#6652c9">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="telefonLable" prefWidth="150.0" textFill="#6652c9">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="sanaLable" prefHeight="21.0" prefWidth="150.0" textFill="#6652c9">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="467.0" prefWidth="1100.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="listParentTable" onMouseClicked="#getParentSelected">
+              <columns>
+                <TableColumn fx:id="fioParentTable" prefWidth="261.0" text="Ota-Ona" />
+                  <TableColumn fx:id="dateParentTable" prefWidth="213.0" text="Tug'ilgan sana" />
+              </columns>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </TableView>
+            <TableView fx:id="listChildTable" onMouseClicked="#getChildSelected" prefWidth="476.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+               <columns>
+                  <TableColumn fx:id="fioChildTable" prefWidth="311.0" text="Farzand" />
+                  <TableColumn fx:id="dateChildTable" prefWidth="163.0" text="Tug'ilgan sana" />
+               </columns>
+            </TableView>
+         </children>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

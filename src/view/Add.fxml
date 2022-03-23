@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddController">
+   <children>
+      <JFXTextField fx:id="fioField" labelFloat="true" prefHeight="38.0" prefWidth="600.0" promptText="F.I.O*">
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="phoneField" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="600.0" promptText="Telefon">
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="dateField" defaultColor="#4165bf" promptText="Oy.Kun.Yil">
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" top="50.0" />
+         </VBox.margin>
+      </JFXDatePicker>
+      <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="720.0">
+         <children>
+            <JFXComboBox fx:id="positionCombo" labelFloat="true" prefHeight="38.0" prefWidth="349.0" promptText="Lavozim">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </JFXComboBox>
+         </children>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#addClicked" styleClass="buttonSetting" stylesheets="@../stylesheets/butttons.css" text="Qo'shish">
+               <HBox.margin>
+                  <Insets left="60.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#cancelClicked" styleClass="buttonSetting" stylesheets="@../stylesheets/butttons.css" text="Bekor Qilish">
+               <HBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

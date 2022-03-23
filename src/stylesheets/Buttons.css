@@ -1,0 +1,129 @@
+
+.button{
+    -fx-font-weight: regular;
+    -fx-background-color: #0d066e;
+    -fx-background-radius: 22; 
+    -fx-font-size:18;
+    -fx-text-fill:white;
+}
+
+
+.button:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 22; 
+    -fx-font-size:18;
+    -fx-text-fill:#0d066e;
+    -fx-border-color:#0d066e;
+    -fx-border-radius:20;
+    -fx-border-width:2;
+    
+}
+
+
+.buttonKirish{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 22; 
+    -fx-font-size:18;
+    -fx-text-fill:#0d066e;
+    -fx-border-width:2;
+}
+
+
+.buttonKirish:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #0d066e;
+    -fx-background-radius: 22; 
+    -fx-font-size:18;
+    -fx-text-fill:white;
+    -fx-border-color:#0d066e;
+    -fx-border-radius:20;
+    -fx-border-width:2;
+    
+}
+
+
+.buttonRed{
+    -fx-font-weight: regular;
+    -fx-background-color: #FF0000;
+    -fx-background-radius: 22; 
+    -fx-font-size:18;
+    -fx-text-fill:white;
+}
+
+
+.buttonRed:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 22; 
+    -fx-font-size:18;
+    -fx-text-fill:#FF0000;
+    -fx-border-color:#FF0000;
+    -fx-border-radius:20;
+    -fx-border-width:2;
+    
+}
+
+.buttonExcel{
+    -fx-font-weight: regular;
+    -fx-background-color: cornflowerblue;
+    -fx-background-radius: 35; 
+    -fx-font-size:18;
+    -fx-text-fill:white;
+}
+
+
+.buttonExcel:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 35; 
+    -fx-font-size:18;
+    -fx-text-fill:#0d066e;
+    -fx-border-color:#0d066e;
+    -fx-border-radius:20;
+    -fx-border-width:2;
+    
+}
+
+
+.button1{
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-text-fill:white;
+}
+
+
+.button1:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 30; 
+    -fx-font-size:18;
+    -fx-text-fill:#0d066e;
+    -fx-border-color:#0d066e;
+    -fx-border-radius:35;
+    -fx-border-width:2;
+    
+}
+
+
+.button2{
+    -fx-background-color: transparent;
+}
+
+
+.button2:hover{
+    
+    -fx-background-color: transparent;
+    -fx-background-radius: 22; 
+    -fx-border-color:#0d066e;
+    -fx-border-radius:22;
+    -fx-border-width:2;
+    
+}
+
+
+.calendar{
+    -fx-font-weight: bold;
+    -fx-font-size:16;
+}

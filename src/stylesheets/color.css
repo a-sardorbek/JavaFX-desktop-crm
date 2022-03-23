@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 5, 2021, 8:59:35 AM
+    Author     : Сардорбек
+*/
+
+
+.logincolor{
+    -fx-background-color: linear-gradient(to right top, #051937, #003c63, #006278, #00876a, #36a840);
+}
+
+

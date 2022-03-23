@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="670.0" prefWidth="254.0" spacing="10.0" style="-fx-background-color: #1A5E9D;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="27.0" layoutY="55.0" onMouseClicked="#dashboardPage" prefHeight="40.0" prefWidth="220.0" styleClass="buttons" stylesheets="@../stylesheets/butttons.css" text="Tug'ilgan kunlar" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_data_recovery_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#malumotPage" prefHeight="40.0" prefWidth="220.0" styleClass="buttons" stylesheets="@../stylesheets/butttons.css" text="Xodimlar" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_data_recovery_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="94.0" layoutY="43.0" onMouseClicked="#qoshishPage" prefHeight="40.0" prefWidth="220.0" styleClass="buttons" stylesheets="@../stylesheets/butttons.css" text="Xodim qo'shish" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_add_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="27.0" layoutY="90.0" onMouseClicked="#lavozimPage" prefHeight="40.0" prefWidth="220.0" styleClass="buttons" stylesheets="@../stylesheets/butttons.css" text="Lavozim qo'shish" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_add_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="27.0" layoutY="215.0" onMouseClicked="#deletePAge" prefHeight="40.0" prefWidth="220.0" styleClass="buttons" stylesheets="@../stylesheets/butttons.css" text="O'chirish" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_delete_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="900.0">
+               <children>
+                  <JFXTextField fx:id="searcchField" alignment="CENTER" labelFloat="true" prefHeight="29.0" prefWidth="338.0" promptText="Qidirish" style="-fx-background-color: white;">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <Button mnemonicParsing="false" onMouseClicked="#refreshClicked" prefHeight="47.0" prefWidth="57.0" styleClass="button1" stylesheets="@../stylesheets/Buttons.css">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_restart_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label prefHeight="21.0" prefWidth="145.0" text="Xodimlar" textFill="#3b11ae">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Book Antiqua Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="listViewTable" prefHeight="541.0" prefWidth="780.0">
+               <columns>
+                  <TableColumn fx:id="fioTable" prefWidth="291.0" text="FIO" />
+                  <TableColumn fx:id="positionTable" prefWidth="168.0" text="Lavozim" />
+                  <TableColumn fx:id="phoneTable" prefWidth="149.0" text="Telefon" />
+                  <TableColumn fx:id="dateTable" prefWidth="118.0" text="Tug'ilgan sana" />
+                  <TableColumn fx:id="actionTable" prefWidth="90.0" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="60.0" right="60.0" top="40.0" />
+               </VBox.margin>
+            </TableView>
+         </children></VBox>
+   </center>
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #0F3F6B;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="930.0" layoutY="17.0" onMouseClicked="#iconifiedClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_minus_50px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="7.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#fullClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_square_50px.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#exitClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_cancel_50px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="7.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

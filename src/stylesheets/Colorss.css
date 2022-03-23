@@ -1,0 +1,17 @@
+.pageColor{
+    
+     -fx-background-color: linear-gradient(to right top,#2921e3, #2921e3, #2921e3, #2921e3, #2921e3,#2921e3);
+     
+}
+
+.pageColor1{
+    
+   -fx-background-color: linear-gradient(to right bottom, #FF0000, #ff186d, #f749ac, #d072db, #1d1b34);     
+}
+
+.adminColor{
+ -fx-background-color: linear-gradient(to right top, #d16b97, #c185cc, #97a3f4, #58bfff, #00d7ff, #00d4fa, #00d2f5, #00cff0, #00b4fd, #0094ff, #006eff, #4536e3);   
+}
+
+
+

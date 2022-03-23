@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPosition">
+   <left>
+      <VBox prefHeight="466.0" prefWidth="367.0" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <TextField fx:id="lavozimField" promptText="Lavozim">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="35.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onMouseClicked="#addClicked" prefHeight="39.0" prefWidth="123.0" styleClass="buttonSetting" stylesheets="@../stylesheets/butttons.css" text="Qo'shish">
+               <VBox.margin>
+                  <Insets left="80.0" top="60.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="466.0" prefWidth="689.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="listViewTable" prefHeight="273.0" prefWidth="340.0">
+              <columns>
+                <TableColumn fx:id="lavozimTable" prefWidth="307.0" text="Lavozim" />
+                  <TableColumn fx:id="actionTable" prefWidth="125.0" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="25.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="employeeFiolabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textFill="#162483">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="240.0" text="Lavozim qo'shish" textFill="#22339e">
+               <font>
+                  <Font name="Book Antiqua Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="1007.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
