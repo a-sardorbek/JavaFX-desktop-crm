@@ -4,5 +4,5 @@ This application is made for private textile company using JavaFX. Everyone can 
 
 # In Controller package you can see all of my servie classes
 
-# I DataBaseCOnnect package. DbConnect class used to connect to derby embedded database.
+# In DataBaseCOnnect package. DbConnect class used to connect to derby embedded database.
 
